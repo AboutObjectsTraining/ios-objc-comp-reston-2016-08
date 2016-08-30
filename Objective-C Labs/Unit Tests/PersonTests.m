@@ -41,6 +41,11 @@
     Person *fred = [[Person alloc] initWithFirstName:@"Fred"
                                             lastName:@"Smith"
                                                  age:32];
+    
+//    Person *copyOfFred = [fred copy];
+//    NSLog(@"%@", copyOfFred);
+
+    
     NSLog(@"%@", [fred fullName]);
     
     NSLog(@"%@", [fred description]);
