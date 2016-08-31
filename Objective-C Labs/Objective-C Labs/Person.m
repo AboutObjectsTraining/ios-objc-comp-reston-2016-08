@@ -33,6 +33,19 @@ const NSUInteger MaxRanking = 5;
                                        age:age];
 }
 
+- (NSString *)firstName
+{
+    if (_firstName == nil) {
+        [self loadFirstName];
+    }
+    return _firstName;
+}
+
+- (void)loadFirstName
+{
+    self.firstName = @"Unknwown";
+}
+
 - (NSString *)fullName
 {
     return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];

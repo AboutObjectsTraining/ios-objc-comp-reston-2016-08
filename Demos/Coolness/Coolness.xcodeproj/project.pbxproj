@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3F165F141D76059200A89986 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F131D76059200A89986 /* main.m */; };
-		3F165F171D76059200A89986 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F161D76059200A89986 /* AppDelegate.m */; };
+		3F165F171D76059200A89986 /* CLNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F161D76059200A89986 /* CLNAppDelegate.m */; };
 		3F165F1F1D76059200A89986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F165F1E1D76059200A89986 /* Assets.xcassets */; };
 		3F165F221D76059200A89986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F165F201D76059200A89986 /* LaunchScreen.storyboard */; };
-		3F165F2B1D76233600A89986 /* CoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2A1D76233600A89986 /* CoolViewController.m */; };
-		3F165F2E1D76341B00A89986 /* CoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2D1D76341B00A89986 /* CoolView.m */; };
+		3F165F2B1D76233600A89986 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2A1D76233600A89986 /* CLNCoolViewController.m */; };
+		3F165F2E1D76341B00A89986 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2D1D76341B00A89986 /* CLNCoolView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F165F0F1D76059200A89986 /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F165F131D76059200A89986 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3F165F151D76059200A89986 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3F165F161D76059200A89986 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F165F151D76059200A89986 /* CLNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNAppDelegate.h; sourceTree = "<group>"; };
+		3F165F161D76059200A89986 /* CLNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNAppDelegate.m; sourceTree = "<group>"; };
 		3F165F1E1D76059200A89986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F165F211D76059200A89986 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F165F231D76059200A89986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F165F291D76233600A89986 /* CoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolViewController.h; sourceTree = "<group>"; };
-		3F165F2A1D76233600A89986 /* CoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolViewController.m; sourceTree = "<group>"; };
-		3F165F2C1D76341B00A89986 /* CoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolView.h; sourceTree = "<group>"; };
-		3F165F2D1D76341B00A89986 /* CoolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolView.m; sourceTree = "<group>"; };
+		3F165F291D76233600A89986 /* CLNCoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewController.h; sourceTree = "<group>"; };
+		3F165F2A1D76233600A89986 /* CLNCoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewController.m; sourceTree = "<group>"; };
+		3F165F2C1D76341B00A89986 /* CLNCoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
+		3F165F2D1D76341B00A89986 /* CLNCoolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +59,12 @@
 		3F165F111D76059200A89986 /* Coolness */ = {
 			isa = PBXGroup;
 			children = (
-				3F165F151D76059200A89986 /* AppDelegate.h */,
-				3F165F161D76059200A89986 /* AppDelegate.m */,
-				3F165F291D76233600A89986 /* CoolViewController.h */,
-				3F165F2A1D76233600A89986 /* CoolViewController.m */,
-				3F165F2C1D76341B00A89986 /* CoolView.h */,
-				3F165F2D1D76341B00A89986 /* CoolView.m */,
+				3F165F151D76059200A89986 /* CLNAppDelegate.h */,
+				3F165F161D76059200A89986 /* CLNAppDelegate.m */,
+				3F165F291D76233600A89986 /* CLNCoolViewController.h */,
+				3F165F2A1D76233600A89986 /* CLNCoolViewController.m */,
+				3F165F2C1D76341B00A89986 /* CLNCoolView.h */,
+				3F165F2D1D76341B00A89986 /* CLNCoolView.m */,
 				3F165F1E1D76059200A89986 /* Assets.xcassets */,
 				3F165F201D76059200A89986 /* LaunchScreen.storyboard */,
 				3F165F231D76059200A89986 /* Info.plist */,
@@ -150,9 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F165F2B1D76233600A89986 /* CoolViewController.m in Sources */,
-				3F165F2E1D76341B00A89986 /* CoolView.m in Sources */,
-				3F165F171D76059200A89986 /* AppDelegate.m in Sources */,
+				3F165F2B1D76233600A89986 /* CLNCoolViewController.m in Sources */,
+				3F165F2E1D76341B00A89986 /* CLNCoolView.m in Sources */,
+				3F165F171D76059200A89986 /* CLNAppDelegate.m in Sources */,
 				3F165F141D76059200A89986 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

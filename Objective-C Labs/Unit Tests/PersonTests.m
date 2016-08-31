@@ -21,6 +21,14 @@
     [super tearDown];
 }
 
+- (void)testMe
+{
+    Person *fred = [[Person alloc] init];
+    NSLog(@"First name is %@", fred.firstName);
+    fred.firstName = @"Fred";
+    NSLog(@"First name is %@", fred.firstName);    
+}
+
 - (void)testPart01
 {
     Person *fred = [[Person alloc] init];
