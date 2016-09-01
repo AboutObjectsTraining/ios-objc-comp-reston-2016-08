@@ -1,7 +1,7 @@
 #import "CLNCoolView.h"
 
-
 const CGFloat CLNTextPadding = 8.0;
+const NSTimeInterval CLNDefaultDuration = 1.0;
 
 @interface CLNCoolView ()
 
@@ -37,55 +37,33 @@ const CGFloat CLNTextPadding = 8.0;
     return self;
 }
 
-
 - (void)bounce
 {
     CGSize size = CGSizeMake(120.0, 240.0);
     [self animateBounceWithSize:size];
-    
-    NSDictionary *info = @{ @"size": [NSValue valueWithCGSize:size],
-                            @"duration": [NSNumber numberWithDouble:1.0] };
-    
-    [NSTimer scheduledTimerWithTimeInterval:7.0
-                                     target:self
-                                   selector:@selector(endBounce:)
-                                   userInfo:info
-                                    repeats:NO];
-}
-
-- (void)endBounce:(NSTimer *)timer
-{
-    NSDictionary *info = timer.userInfo;
-    NSValue *sizeValue = info[@"size"];
-    CGSize size = sizeValue.CGSizeValue;
-    NSNumber *durationValue = info[@"duration"];
-    double duration = durationValue.doubleValue;
-    
-    [self animateEndOfBounceWithDuration:duration size:size];
 }
 
 - (void)animateEndOfBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:duration];
-    
-    self.transform = CGAffineTransformIdentity;
-    self.frame = CGRectOffset(self.frame, -size.width, -size.height);
-    
-    [UIView commitAnimations];
+    [UIView animateWithDuration:duration animations:^{
+        self.transform = CGAffineTransformIdentity;
+        self.frame = CGRectOffset(self.frame, -size.width, -size.height);
+    }];
+}
+
+- (void)configureBounceAnimationWithSize:(CGSize)size
+{
+    [UIView setAnimationRepeatCount:3.5];
+    [UIView setAnimationRepeatAutoreverses:YES];
+    self.frame = CGRectOffset(self.frame, size.width, size.height);
+    self.transform = CGAffineTransformMakeRotation(M_PI_2);
 }
 
 - (void)animateBounceWithSize:(CGSize)size
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:1.0];
-    [UIView setAnimationRepeatCount:3.5];
-    [UIView setAnimationRepeatAutoreverses:YES];
-    
-    self.frame = CGRectOffset(self.frame, size.width, size.height);
-    self.transform = CGAffineTransformMakeRotation(M_PI_2);
-    
-    [UIView commitAnimations];
+    [UIView animateWithDuration:CLNDefaultDuration
+                     animations:^{ [self configureBounceAnimationWithSize:size]; }
+                     completion:^(BOOL finished) { [self animateEndOfBounceWithDuration:CLNDefaultDuration size:size]; }];
 }
 
 

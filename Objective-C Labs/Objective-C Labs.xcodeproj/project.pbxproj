@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F228C471D7873500033F76B /* BlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F228C461D7873500033F76B /* BlockTests.m */; };
 		AB18FBC91814901C00AC1192 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = AB18FBC81814901C00AC1192 /* Employee.m */; };
 		AB18FBCB1814942C00AC1192 /* EmployeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB18FBCA1814942C00AC1192 /* EmployeeTests.m */; };
 		AB18FBCD181494DA00AC1192 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = AB18FBC81814901C00AC1192 /* Employee.m */; };
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F228C461D7873500033F76B /* BlockTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTests.m; sourceTree = "<group>"; };
 		AB18FBC71814901C00AC1192 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
 		AB18FBC81814901C00AC1192 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
 		AB18FBCA1814942C00AC1192 /* EmployeeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeTests.m; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				AB18FBCA1814942C00AC1192 /* EmployeeTests.m */,
 				ABE434CA182AB44E00269901 /* DogOwnerTests.m */,
 				ABD09A5F1811ECF600608546 /* Supporting Files */,
+				3F228C461D7873500033F76B /* BlockTests.m */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE434CB182AB44E00269901 /* DogOwnerTests.m in Sources */,
+				3F228C471D7873500033F76B /* BlockTests.m in Sources */,
 				AB18FBCB1814942C00AC1192 /* EmployeeTests.m in Sources */,
 				ABE434CC182AB66300269901 /* DogOwner.m in Sources */,
 				ABD09A711811F65E00608546 /* AOITestCase.m in Sources */,
