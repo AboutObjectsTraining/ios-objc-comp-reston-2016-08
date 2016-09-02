@@ -2,6 +2,6 @@
 
 @interface CLNCoolView : UIView
 
-@property (nonatomic, copy) NSString *text;
+@property (nonatomic, copy) IBInspectable NSString *text;
 
 @end

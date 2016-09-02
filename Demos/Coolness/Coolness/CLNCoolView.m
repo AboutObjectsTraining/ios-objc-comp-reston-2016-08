@@ -3,12 +3,12 @@
 const CGFloat CLNTextPadding = 8.0;
 const NSTimeInterval CLNDefaultDuration = 1.0;
 
+IB_DESIGNABLE
 @interface CLNCoolView ()
 
 @property (nonatomic, assign) BOOL highlighted;
-
+@property (nonatomic, assign) IBInspectable CGFloat borderWidth;
 @end
-
 
 @implementation CLNCoolView
 
@@ -27,6 +27,16 @@ const NSTimeInterval CLNDefaultDuration = 1.0;
     [self addGestureRecognizer:recognizer];
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (!(self = [super initWithCoder:aDecoder])) return nil;
+    
+    [self configureLayer];
+    [self configureGestureRecognizer];
+    
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (!(self = [super initWithFrame:frame])) return nil;
@@ -35,6 +45,21 @@ const NSTimeInterval CLNDefaultDuration = 1.0;
     [self configureGestureRecognizer];
     
     return self;
+}
+
+- (void)prepareForInterfaceBuilder
+{
+    [self configureLayer];
+    [self sizeToFit];
+}
+
+- (CGFloat)borderWidth
+{
+    return self.layer.borderWidth;
+}
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
 }
 
 - (void)bounce

@@ -13,6 +13,7 @@
 		3F165F221D76059200A89986 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F165F201D76059200A89986 /* LaunchScreen.storyboard */; };
 		3F165F2B1D76233600A89986 /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2A1D76233600A89986 /* CLNCoolViewController.m */; };
 		3F165F2E1D76341B00A89986 /* CLNCoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F165F2D1D76341B00A89986 /* CLNCoolView.m */; };
+		3F228C491D78D5A00033F76B /* CoolStuff.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F228C481D78D5A00033F76B /* CoolStuff.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3F165F2A1D76233600A89986 /* CLNCoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewController.m; sourceTree = "<group>"; };
 		3F165F2C1D76341B00A89986 /* CLNCoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNCoolView.h; sourceTree = "<group>"; };
 		3F165F2D1D76341B00A89986 /* CLNCoolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNCoolView.m; sourceTree = "<group>"; };
+		3F228C481D78D5A00033F76B /* CoolStuff.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolStuff.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				3F165F2A1D76233600A89986 /* CLNCoolViewController.m */,
 				3F165F2C1D76341B00A89986 /* CLNCoolView.h */,
 				3F165F2D1D76341B00A89986 /* CLNCoolView.m */,
+				3F228C481D78D5A00033F76B /* CoolStuff.xib */,
 				3F165F1E1D76059200A89986 /* Assets.xcassets */,
 				3F165F201D76059200A89986 /* LaunchScreen.storyboard */,
 				3F165F231D76059200A89986 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F165F221D76059200A89986 /* LaunchScreen.storyboard in Resources */,
+				3F228C491D78D5A00033F76B /* CoolStuff.xib in Resources */,
 				3F165F1F1D76059200A89986 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +296,7 @@
 				3F165F281D76059200A89986 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

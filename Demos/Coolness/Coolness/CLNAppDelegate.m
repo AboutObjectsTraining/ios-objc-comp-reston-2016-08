@@ -9,11 +9,7 @@
     self.window = [[UIWindow alloc] initWithFrame:screenRect];
     self.window.backgroundColor = [UIColor lightGrayColor];
     
-    CLNCoolViewController *controller = [[CLNCoolViewController alloc] init];
-    //    UIView *backgroundView = controller.view;
-    //    [self.window addSubview:backgroundView];
-    //    self.window.rootViewController = controller;
-    
+    CLNCoolViewController *controller = [[CLNCoolViewController alloc] initWithNibName:@"CoolStuff" bundle:nil];
     [self.window setRootViewController:controller];
     [self.window makeKeyAndVisible];
     
